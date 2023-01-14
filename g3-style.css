@@ -1,0 +1,163 @@
+/* Common style */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+.introduction {
+  background-color: #fff4e7;
+  padding-top: 50px;
+  /* padding-bottom: 100px; */
+}
+
+/* navigation bar style */
+
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  margin-bottom: 150px;
+}
+.menu-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.g3-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+
+/* brand group style */
+
+.brand {
+  width: 870px;
+  height: 230px;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.brand-title {
+  font-weight: 700;
+  font-size: 60px;
+}
+.brand-description {
+  font-weight: 400;
+  font-size: 16px;
+  padding: 30px 0;
+}
+.btn-explore {
+  width: 180px;
+  height: 64px;
+  background: #ff900e;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+}
+.banner {
+  display: block;
+  margin: auto;
+  padding-top: 120px;
+}
+
+/* Feature style */
+
+.feature-container {
+  display: grid;
+  grid-template-columns: 345px 345px 510px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 130px;
+}
+.feature-text {
+  height: 310px;
+  display: block;
+  margin: auto;
+  margin-left: 70px;
+}
+.feature-title {
+  font-weight: 700;
+  font-size: 45px;
+}
+.enjoy-container {
+  display: grid;
+  grid-template-columns: 500px 700px;
+  margin-top: 130px;
+  justify-content: center;
+  gap: 20px;
+}
+.enjoy-title {
+  font-weight: 700;
+  font-size: 45px;
+  border-left: 5px solid #ff900e;
+  margin-top: 20px;
+}
+.box-title {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.enjoy-box {
+  box-shadow: 0.2px 0.2px 20px 1px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.enjoy-description {
+  margin: 20px 0;
+}
+.btn-year {
+  position: absolute;
+  width: 330px;
+  height: 180px;
+  border-radius: 10px;
+  border: none;
+  background-color: #ff900e;
+  color: white;
+  margin-top: 804px;
+}
+.btn-year .year {
+  font-weight: 700;
+  font-size: 60px;
+}
+.btn-year .experience {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+/* Responsive for mobile */
+
+@media screen and (max-width: 576px) {
+  .nav-container,
+  .menu-list {
+    flex-direction: column;
+  }
+  .brand {
+    width: 100%;
+    padding-top: 0;
+  }
+  .brand-title {
+    font-size: 40px;
+  }
+  .banner,
+  .enjoy-photo {
+    width: 100%;
+  }
+  .feature-container {
+    grid-template-columns: 1fr;
+  }
+  .feature-photo img {
+    width: 100%;
+  }
+  .feature-text {
+    margin-left: 0;
+  }
+  .enjoy-container {
+    grid-template-columns: 1fr;
+  }
+}
