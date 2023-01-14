@@ -7,7 +7,15 @@
 .introduction {
   background-color: #fff4e7;
   padding-top: 50px;
-  /* padding-bottom: 100px; */
+}
+.brand-description,
+.feature-description,
+.enjoy-description,
+.fact-description,
+.client-box-description,
+.sponsor-description,
+.enjoy-box-description {
+  color: #727272;
 }
 
 /* navigation bar style */
@@ -84,6 +92,9 @@
   font-weight: 700;
   font-size: 45px;
 }
+.feature-description {
+  margin: 20px 0;
+}
 .enjoy-container {
   display: grid;
   grid-template-columns: 500px 700px;
@@ -100,16 +111,13 @@
 .box-title {
   font-weight: 600;
   font-size: 20px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .enjoy-box {
   box-shadow: 0.2px 0.2px 20px 1px rgba(0, 0, 0, 0.1);
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-}
-.enjoy-description {
-  margin: 20px 0;
 }
 .btn-year {
   position: absolute;
@@ -135,9 +143,10 @@
 .fact {
   margin: 100px 0;
   width: 540px;
-  margin-left: 350px;
-
-
+  margin-left: 240px;
+}
+.fact-description {
+  margin: 10px 0;
 }
 .client-container {
   display: flex;
@@ -154,12 +163,16 @@
   height: 220px;
   border: 1px solid #ff900e;
   border-radius: 10px;
-  transition: .5s,transform 2s;
+  transition: 0.5s, transform 2s;
 }
-.client-box:hover{
-    color: chartreuse;
-    background-color: dimgray;
-    transform: scale(.9) rotate(360deg);
+.client-box-description {
+  font-weight: 600;
+  font-size: 20px;
+}
+.client-box:hover {
+  color: chartreuse;
+  background-color: dimgray;
+  transform: scale(0.9) rotate(360deg);
 }
 
 .number {
@@ -194,6 +207,7 @@
 
 .copyright {
   background-color: bisque;
+  color: #424242;
   width: 90%;
   height: 100px;
   display: block;
@@ -247,7 +261,7 @@
     flex-direction: column;
     gap: 15px;
   }
-  .sponsor{
+  .sponsor {
     display: inline;
   }
 }
